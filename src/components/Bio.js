@@ -27,11 +27,9 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
-          Francisco building useful things.{' '}
-          <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
-          </a>
+          Soy un desarollador de la CDMX, me enfoco en React y Django.
+          <a href="https://twitter.com/kevinwestmx">Sigueme en twitter.</a>
+          Comparto muy seguido tips de programación de React.
         </p>
       </div>
     )
