@@ -3,7 +3,7 @@ title: ¿Por qué usar React?
 date: "2018-07-17"
 ---
 
-![Chinese Salty Egg](./react.svg)
+![Logo de React](./react.svg)
 
 ¡Hola!, seguramente estas empezando un nuevo proyecto,
 tienes curiosidad por entender cual es la nueva flamante libreria
