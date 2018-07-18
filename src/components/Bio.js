@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 // Import typefaces
 import 'typeface-montserrat'
@@ -28,7 +29,12 @@ class Bio extends React.Component {
         />
         <p>
           Soy un desarollador de la CDMX, me enfoco en React y Django.
-          <a href="https://twitter.com/kevinwestmx">Sigueme en twitter.</a>
+          Actualmente me encuentro trabajando en <a href="http://www.apli.jobs/" target="blank">Apli</a>,
+          el Uber de los empleos 🤩 en México.
+          <br/>
+          <a href="https://twitter.com/kevinwestmx" target="blank">
+            Sigueme en twitter.
+          </a>
           Comparto muy seguido tips de programación de React.
         </p>
       </div>
