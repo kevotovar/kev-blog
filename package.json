@@ -25,6 +25,7 @@
     "gatsby-source-filesystem": "^1.5.31",
     "gatsby-transformer-remark": "^1.7.40",
     "gatsby-transformer-sharp": "^1.6.22",
+    "husky": "^1.0.0-rc.13",
     "lodash": "^4.17.5",
     "react-emotion": "^9.2.6",
     "typeface-merriweather": "0.0.43",
@@ -59,5 +60,10 @@
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+  },
+  "husky": {
+    "pre-commit": "yarn format",
+    "post-pull": "yarn",
+    "post-merge": "yarn"
   }
 }
