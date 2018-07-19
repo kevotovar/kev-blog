@@ -1,5 +1,5 @@
 import styled from 'react-emotion'
-import { rhythm } from '../utils/typography'
+import { rhythm } from '../../utils/typography'
 
 export const BioContainer = styled.div`
   display: flex;
