@@ -14,6 +14,7 @@ class Template extends React.Component {
     }
 
     if (location.pathname === rootPath) {
+      console.log(scale(1.5))
       header = (
         <h1
           style={{
