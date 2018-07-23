@@ -6,7 +6,7 @@ import { BioContainer, ProfileImage } from './styledComponents'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import profilePic from './profile-pic.jpg'
+import profilePic from './profile-pic.png'
 import { rhythm } from '../../utils/typography'
 
 class Bio extends React.Component {

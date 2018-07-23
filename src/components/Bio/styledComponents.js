@@ -11,4 +11,5 @@ export const ProfileImage = styled.img`
   margin-bottom: ${0};
   width: ${rhythm(2)};
   height: ${rhythm(2)};
+  border-radius: 50%;
 `
