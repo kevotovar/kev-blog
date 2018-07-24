@@ -1,6 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import {
+  RootHeader,
+  ChildHeader,
+  Container,
+  linkStyle,
+} from './styledComponents'
+
 import { rhythm, scale } from '../utils/typography'
 
 class Template extends React.Component {
@@ -14,61 +21,27 @@ class Template extends React.Component {
     }
 
     if (location.pathname === rootPath) {
-      console.log(scale(1.5))
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
+        <RootHeader>
+          <Link className={linkStyle} to={'/'}>
             Kevin Tovar
           </Link>
-        </h1>
+        </RootHeader>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
+        <ChildHeader>
+          <Link className={linkStyle} to={'/'}>
             Kevin Tovar
           </Link>
-        </h3>
+        </ChildHeader>
       )
     }
     return (
-      <div
-        style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <Container>
         {header}
         {children()}
-      </div>
+      </Container>
     )
   }
 }
