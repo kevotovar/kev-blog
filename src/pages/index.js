@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 
-class BlogIndex extends React.Component {
+class BlogIndex extends React.PureComponent {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
