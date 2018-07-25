@@ -37,10 +37,12 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.19.1",
+    "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-react": "^7.7.0",
-    "flow-bin": "^0.76.0",
+    "flow-bin": "^0.77.0",
     "gh-pages": "^1.1.0",
     "prettier": "^1.12.0"
   },

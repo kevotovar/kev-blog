@@ -5,10 +5,14 @@
   },
   "plugins": [
     "react",
+    "flowtype"
   ],
   "globals": {
     "graphql": false,
   },
+  "extends": [
+    "plugin:flowtype/recommended"
+  ],
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {

@@ -1,16 +1,18 @@
-import React from 'react'
+// @flow
+import * as React from 'react'
 import Link from 'gatsby-link'
 
-import {
-  RootHeader,
-  ChildHeader,
-  Container,
-  linkStyle,
-} from './styledComponents'
+import Header from '../components/Header'
+import { Container } from './styledComponents'
 
 import { rhythm, scale } from '../utils/typography'
 
-class Template extends React.Component {
+type TemplateProps = {
+  location: Object,
+  children: Function,
+}
+
+class Template extends React.Component<TemplateProps> {
   render() {
     const { location, children } = this.props
     let header
@@ -20,26 +22,9 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-    if (location.pathname === rootPath) {
-      header = (
-        <RootHeader>
-          <Link className={linkStyle} to={'/'}>
-            Kevin Tovar
-          </Link>
-        </RootHeader>
-      )
-    } else {
-      header = (
-        <ChildHeader>
-          <Link className={linkStyle} to={'/'}>
-            Kevin Tovar
-          </Link>
-        </ChildHeader>
-      )
-    }
     return (
       <Container>
-        {header}
+        <Header big={location.pathname === rootPath} />
         {children()}
       </Container>
     )
